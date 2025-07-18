@@ -1,0 +1,59 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(circle at center, #1a1a2e, #16213e, #0f3460);
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+}
+.clock{
+  width:300px;
+  height:300px;
+  border: 10px solid white;
+  border-radius: 50%;
+  position: relative;
+   background: radial-gradient(circle at center, #0f3460, #16213e);
+}
+.hand{
+  width: 50%;
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  transform-origin: 100%;
+  transform: rotate(90deg);
+  transition: all 0.05s ease-in-out;
+  transition-timing-function: cubic-bezier(0.1,2.7,0.58,1);
+
+  
+}
+.hour-hand{
+  
+     height: 6px;
+     background-color: white;
+}
+.minute-hand{
+
+  height: 4px;
+  background-color: white;
+}
+.second-hand{
+  
+  height: 2px;
+  background-color: white;
+}
+.center-point{
+  height: 12px;
+  width: 12px;
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+  
